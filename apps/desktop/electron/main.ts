@@ -306,7 +306,6 @@ async function checkCustomMcp(event: IpcMainInvokeEvent, id: unknown): Promise<C
     if (manager) { await manager.close(); customMcpManagers.delete(manager); }
   }
 }
-
 let openCloudStore: OpenCloudStore | null = null;
 
 /** The user's Roblox Open Cloud key and creator, with the key encrypted by the OS. */
